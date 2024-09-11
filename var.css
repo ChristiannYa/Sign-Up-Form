@@ -1,0 +1,10 @@
+:root {
+    /* Color */
+    --prm-acc1: #FF7979;
+    --prm-acc2: #38CC8B;
+    --prm-acc3: #5E54A4;
+    --prm-acc4: #3D3B48;
+
+    /* Font(s) */
+    --prm-ff: "Poppins", system-ui;
+}
