@@ -28,19 +28,30 @@
                 <div id="sbs-form-content">
                     <form id="sbs-form">
                         <div class="sbs-section">
-                            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                            <div class="error-message"></div>
                         </div>
                         <div class="sbs-section">
-                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                            <div class="error-message"></div>
                         </div>
                         <div class="sbs-section">
-                            <input type="text" id="email" name="email" placeholder="Email Address" required>
+                            <input type="text" id="email" name="email" placeholder="Email Address">
+                            <div class="error-message"></div>
                         </div>
                         <div class="sbs-section">
-                            <input type="text" id="password" name="password" placeholder="Password" required>
+                            <div class="password-container">
+                                <input type="password" id="password" name="password" placeholder="Password">
+                                <button type="button" id="togglePassword">
+                                    <img src="images/eye-closed.svg" alt="Show password" class="eye-icon closed">
+                                    <img src="images/eye-open.svg" alt="Hide password" class="eye-icon open"
+                                        style="display: none;">
+                                </button>
+                            </div>
+                            <div class="error-message"></div>
                         </div>
+                        <button type="submit" id="claim" class="banner">CLAIM YOUR FREE TRIAL</button>
                     </form>
-                    <p id="claim" class="banner">CLAIM YOUR FREE TRIAL</p>
                     <p id="terms-and-services">By clicking the button, you agree to our <span>Terms and Services</span>
                     </p>
                 </div>

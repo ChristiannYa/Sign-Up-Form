@@ -84,25 +84,86 @@ body {
     flex-direction: column;
 }
 
+.sbs-section {
+    position: relative;
+    margin-bottom: 1.25rem;
+    height: 3.2rem;
+}
+
 .sbs-section input {
+    color: #3D3B48;
     border: solid 1px #DEDEDE;
     border-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-indent: 10%;
 
     width: 100%;
     height: 3.5rem;
 }
 
 .sbs-section input::placeholder {
-    font-weight: 600;
+    font-weight: 500;
     text-indent: 10%;
+}
+
+.sbs-section input:focus {
+    border-color: #5E54A4;
+    outline: none;
+}
+
+.sbs-section #togglePassword {
+    background-color: white;
+    border-color: transparent;
+
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    z-index: 1;
+}
+
+.error-message {
+    color: #ff7a7a;
+    font-size: 0.6875rem;
+    font-style: italic;
+    font-weight: 500;
+
+    margin-top: 0.3rem;
+    text-align: right;
+
+    display: none;
+}
+
+.error-icon {
+    position: absolute;
+    right: 1rem;
+    transform: translateY(-255%);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
+.sbs-section input.error {
+    border-color: #ff7a7a;
+}
+
+.sbs-section input.error::placeholder {
+    color: #ff7a7a;
 }
 
 #claim {
     background-color: var(--prm-acc2);
+    border-color: transparent;
     box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
     font-weight: 500;
 
+    width: 100%;
     margin-top: 1.2rem;
+}
+
+#claim:hover {
+    /* background-color: #77E2B3; */
+    box-shadow: none;
 }
 
 #terms-and-services {
@@ -118,13 +179,13 @@ body {
 }
 
 /* Left Side MQ */
-@media (max-width: 431px) {
+@media (max-width: 26.9375rem) {
     body {
         background-image: url("images/bg-intro-mobile.png");
     }
 
     .container {
-        width: 90%;
+        width: 95%;
     }
 
     #form-wrapper {
